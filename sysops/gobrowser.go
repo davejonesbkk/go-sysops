@@ -1,14 +1,10 @@
 package main 
 
 import ("fmt"
-		"net/http")
+"net/http")
 
 func index_handler(w http.ResponseWriter, r *http.Request) {
-
-	fmt.Fprint(w, '<h2>Hey there</h2
-				<p>Go is fast!</p>
-				<p>...and simple!</p>
-				')
+	fmt.Fprintf(w, "Go web browser")
 }
 
 func main() {
